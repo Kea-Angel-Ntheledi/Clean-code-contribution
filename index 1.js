@@ -37,11 +37,11 @@ class Device {
 
     executeStartup() {
         // Initialize device
-        console.log('Device is starting up');
+        console.log('Laptop starting up');
     }
 
     executeShutdown() {
-        // Shut down device
-        console.log('Device is shutting down');
+        // Shut down
+        console.log('Laptop shutting down');
     }
 }
