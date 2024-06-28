@@ -21,3 +21,27 @@ class D {
     }
 }
 
+// Solution:
+class Device {
+    constructor(status) {
+        this.status = status;
+    }
+
+    performAction() {
+        if (this.status === 0) {
+            this.executeStartup();
+        } else {
+            this.executeShutdown();
+        }
+    }
+
+    executeStartup() {
+        // Initialize device
+        console.log('Device is starting up');
+    }
+
+    executeShutdown() {
+        // Shut down device
+        console.log('Device is shutting down');
+    }
+}
