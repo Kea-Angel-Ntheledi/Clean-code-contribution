@@ -24,3 +24,35 @@
 }
 
 
+//Solution:
+function calculateAndPrintStatistics(data) {
+    const sum = calculateSum(data);
+    const average = calculateAverage(data, sum);
+    const max = findMax(data);
+    const min = findMin(data);
+
+    printStatistics(sum, average, max, min);
+}
+
+function calculateSum(data) {
+    return data.reduce((acc, val) => acc + val, 0);
+}
+
+function calculateAverage(data, sum) {
+    return sum / data.length;
+}
+
+function findMax(data) {
+    return Math.max(...data);
+}
+
+function findMin(data) {
+    return Math.min(...data);
+}
+
+function printStatistics(sum, average, max, min) {
+    console.log(`Sum: ${sum}`);
+    console.log(`Average: ${average}`);
+    console.log(`Max: ${max}`);
+    console.log(`Min: ${min}`);
+}
